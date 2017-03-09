@@ -7,13 +7,29 @@
     android:layout_height="match_parent"
     tools:context="com.example.therishka.androidlabservices.MainActivity">
 
-    <TextView
+    <LinearLayout
+        style="?android:buttonBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/start_button"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NO KILL"/>
+
+        <Button
+            android:id="@+id/start_button_with_destroy"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KILL"/>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
